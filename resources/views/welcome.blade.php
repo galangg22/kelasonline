@@ -7,16 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <header><h1>halo sayangku</h1></header>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quos corrupti repellendus sequi, cupiditate omnis nisi impedit eius error, ullam sint ea neque deserunt perspiciatis non quod autem animi voluptates.</p>
+    <header><h1>ASSALAMUALAIKUM</h1></header> <hr> <hr>
+    <header><h1>INTRODUCTION MYSELF </h1></header>
 </body>
 </html>
 
 <style>
-    body {
-    text-align: center;
-    }
-
     header {
         text-align: center
     }
