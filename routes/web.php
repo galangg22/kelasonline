@@ -2,17 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('home'); // ← ini diperbaiki!
+});
+
+Route::get('/classes', function () {
+    $classes = [
+        (object)['name' => 'Laravel Dasar', 'description' => 'Belajar Laravel dari 0.'],
+        (object)['name' => 'PHP OOP', 'description' => 'Dasar Pemrograman Berorientasi Objek.'],
+        (object)['name' => 'Web Design', 'description' => 'Membuat tampilan website menarik.'],
+    ];
+    return view('classes.index', compact('classes'));
 });
